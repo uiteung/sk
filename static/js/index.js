@@ -20,7 +20,7 @@ import { UrlPostSK } from "./controller/template.js";
             cancelButtonText: 'Batal'
         }).then((result) => {
             if (result.isConfirmed) {
-                postFile(UrlPostSK, "skUpload2324Ganjil", "file", responsePostSK1);
+                postFile(UrlPostSK, "skUpload2324Ganjil", "image", responsePostSK1);
             }
         });
     }
@@ -63,7 +63,7 @@ import { UrlPostSK } from "./controller/template.js";
             cancelButtonText: 'Batal'
         }).then((result) => {
             if (result.isConfirmed) {
-                postFile(UrlPostSK, "skUpload2324Ganjil", "file", responsePostSK2);
+                postFile(UrlPostSK, "skUpload2324Ganjil", "image", responsePostSK2);
             }
         });
     }
