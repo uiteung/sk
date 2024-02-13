@@ -30,7 +30,7 @@ function confirmUpload1() {
         cancelButtonText: 'Batal'
     }).then((result) => {
         if (result.isConfirmed) {
-            postFileWithHeader(PostSKByFolder, "login", token, "skUpload2324Ganjil", "image", responsePostSK1);
+            postFileWithHeader(PostSKByFolder, "login", token, "skUpload2324Ganjil", "file", responsePostSK1);
         }
     });
 }
@@ -75,7 +75,7 @@ function responsePostSK1(result) {
             cancelButtonText: 'Batal'
         }).then((result) => {
             if (result.isConfirmed) {
-                postFileWithHeader(PostSKByFolder, "login", token, "skUpload2324Ganjil", "image", responsePostSK2);
+                postFileWithHeader(PostSKByFolder, "login", token, "skUpload2324Ganjil", "file", responsePostSK2);
             }
         });
     }
