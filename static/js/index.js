@@ -1,6 +1,7 @@
 // Import library yang dibutuhkan
 import { postFileWithHeader } from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.2/croot.js";
 import { UrlPostSK, UrlPostSKByFolder } from "./controller/template.js";
+// import { getValue } from "https://cdn.jsdelivr.net/gh/jscroot/element@0.0.5/croot.js";
 import { token } from "./controller/cookies.js";
 
 const thnAjaran = document.getElementById('thnAjaran');
