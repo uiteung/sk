@@ -47,13 +47,7 @@ function responsePostSK1(result) {
                 window.location.replace("index.html");
             });
         } else {
-            Swal.fire({
-                icon : 'success',
-                title : 'Sukses!',
-                text : result.status,
-                showConfirmButton : false,
-                timer : 1500
-            })
+            console.log(result);
         }
     console.log(result);
 };
@@ -92,13 +86,7 @@ function responsePostSK1(result) {
                 window.location.replace("index.html");
             });
         } else {
-            Swal.fire({
-                icon : 'success',
-                title : 'Sukses!',
-                text : result.status,
-                showConfirmButton : false,
-                timer : 1500
-            })
+            console.log(result);
         }
         console.log(result);
     };
