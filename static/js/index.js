@@ -36,26 +36,15 @@ thnAjaran.addEventListener('change', () => {
     };
 
     function responsePostSK1(result) {
-        if (result.success) {
-            Swal.fire({
-                icon : 'success',
-                title : 'Sukses!',
-                text : result.content.name + ' berhasil diunggah.',
-                showConfirmButton : false,
-                timer : 1500
-            }).then(() => {
-                window.location.replace("index.html");
-            });
-        } else {
-            Swal.fire({
-                icon: 'error',
-                title: 'Gagal!',
-                text: 'Gagal mengunggah file. Silakan coba lagi.',
-                showConfirmButton: false,
-                timer: 1500
-            });
-            console.log(result);
-        }
+        Swal.fire({
+            icon : 'success',
+            title : 'Sukses!',
+            text : 'File SK berhasil diunggah.',
+            showConfirmButton : false,
+            timer : 1500
+        }).then(() => {
+            window.location.replace("index.html");
+        });
         console.log(result);
     };
 
@@ -83,26 +72,15 @@ thnAjaran.addEventListener('change', () => {
     }
 
     function responsePostSK2(result) {
-        if (result.success) {
-            Swal.fire({
-                icon : 'success',
-                title : 'Sukses!',
-                text : result.content.name + ' berhasil diunggah.',
-                showConfirmButton : false,
-                timer : 1500
-            }).then(() => {
-                window.location.replace("index.html");
-            });
-        } else {
-            Swal.fire({
-                icon: 'error',
-                title: 'Gagal!',
-                text: 'Gagal mengunggah file. Silakan coba lagi.',
-                showConfirmButton: false,
-                timer: 1500
-            });
-            console.log(result);
-        }
+        Swal.fire({
+            icon : 'success',
+            title : 'Sukses!',
+            text : 'File SK berhasil diunggah.',
+            showConfirmButton : false,
+            timer : 1500
+        }).then(() => {
+            window.location.replace("index.html");
+        });
         console.log(result);
     };
 });
