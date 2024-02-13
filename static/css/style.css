@@ -84,7 +84,7 @@ table.dataTable thead .sorting_desc_disabled:before {
   width: 75px;
   height: 75px;
   border: 15px solid #dddddd;
-  border-top-color : #ff8700;
+  border-top-color : #0044ff;
   border-radius: 50%;
   animation: loading 0.75s ease infinite;
 }
