@@ -6,6 +6,8 @@ import { token } from "./controller/cookies.js";
 const thnAjaran = document.getElementById('thnAjaran');
 const PostSKByFolder = UrlPostSKByFolder + `?folder=${thnAjaran}`
 
+console.log(thnAjaran);
+
 // Untuk Post File SK 2023 2024 Ganjil
 const submitButton1 = document.getElementById('submitButton1');
 submitButton1.addEventListener('click', () => {
