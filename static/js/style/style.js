@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
 })
 
 // Untuk Ganti-Ganti Form
-document.getElementById('statusSelect').addEventListener('change', function() {
+document.getElementById('thnAjaran').addEventListener('change', function() {
     var selectedOption = this.value;
     if (selectedOption === '2324-1') {
         document.getElementById('2324-1').removeAttribute('hidden');
