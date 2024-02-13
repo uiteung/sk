@@ -10,7 +10,7 @@ thnAjaran.addEventListener('change', () => {
     console.log(selectedYear); // Untuk memastikan nilai tahun ajaran yang dipilih
 
     // Update URL untuk pengiriman SK berdasarkan tahun ajaran yang dipilih
-    const PostSKByFolder = UrlPostSKByFolder + `?folder=${selectedYear}`;
+    const PostSKByFolder = UrlPostSKByFolder + `${selectedYear}`;
 
 // Untuk Post File SK 2023 2024 Ganjil
 const submitButton1 = document.getElementById('submitButton1');
