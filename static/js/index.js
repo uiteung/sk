@@ -4,9 +4,12 @@ import { UrlPostSK, UrlPostSKByFolder } from "./controller/template.js";
 import { token } from "./controller/cookies.js";
 
 const thnAjaran = document.getElementById('thnAjaran');
-const PostSKByFolder = UrlPostSKByFolder + `?folder=${thnAjaran}`
+thnAjaran.addEventListener('change', () => {
+    const selectedYear = thnAjaran.value;
+    console.log(selectedYear); // Untuk memastikan nilai tahun ajaran yang dipilih
 
-console.log(thnAjaran);
+    // Update URL untuk pengiriman SK berdasarkan tahun ajaran yang dipilih
+    const PostSKByFolder = UrlPostSKByFolder + `?folder=${selectedYear}`;
 
 // Untuk Post File SK 2023 2024 Ganjil
 const submitButton1 = document.getElementById('submitButton1');
@@ -98,3 +101,4 @@ function responsePostSK1(result) {
         }
         console.log(result);
     };
+});
