@@ -4,7 +4,7 @@ import { UrlPostSKByFolder } from "../controller/template.js";
 import { token } from "../controller/cookies.js";
 
 // Ambil elemen-elemen dari HTML
-const thnAjaran = document.getElementById('thnAjaranBimbing');
+const thnAjaran = document.getElementById('thnAjaran');
 const submitButton = document.getElementById('submitButton');
 
 // Tambahkan event listener pada tombol submit
