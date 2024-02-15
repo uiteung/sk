@@ -47,7 +47,7 @@ function responsePostSK(result) {
         showConfirmButton: false,
         timer: 1500
     }).then(() => {
-        window.location.replace("form-upload-membimbing.html");
+        window.location.replace("form-upload-mengajar.html");
     });
 
     // Log respons dari pengiriman file
