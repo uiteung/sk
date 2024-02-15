@@ -16,13 +16,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       rel="shortcut icon"
-      href="static/img/enam_berlian-removebg-preview.png" />
+      href="../static/img/enam_berlian-removebg-preview.png" />
 
     <title>SK | ULBI</title>
 
     <!-- Import CSS yang diperlukan -->
-    <link href="./static/css/app.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./static/css/style.css" />
+    <link href="../static/css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet" />
@@ -34,10 +34,10 @@
       <!-- Sidebar Start -->
       <nav id="sidebar" class="sidebar js-sidebar">
         <div class="sidebar-content js-simplebar">
-          <a class="sidebar-brand" href="index.html">
+          <a class="sidebar-brand" href="../index.html">
             <span class="align-middle"
               ><img
-                src="static/img/LOGO ULBI - WIDE BACKGROUNG NEVY (1).png"
+                src="../static/img/LOGO ULBI - WIDE BACKGROUNG NEVY (1).png"
                 alt=""
                 style="width: 150px; margin-left: 25px"
             /></span>
@@ -47,7 +47,7 @@
             <li class="sidebar-header">Dashboard</li>
 
             <li class="sidebar-item active">
-              <a class="sidebar-link" href="index.html">
+              <a class="sidebar-link" href="../index.html">
                 <i class="align-middle" data-feather="sliders"></i>
                 <span class="align-middle">Dashboard SK</span>
               </a>
@@ -88,7 +88,7 @@
                   href="#"
                   data-bs-toggle="dropdown">
                   <img
-                    src="static/img/avatars/admin.png"
+                    src="../static/img/avatars/admin.png"
                     class="avatar img-fluid rounded me-1" />
                   <span class="text-dark">Admin</span>
                 </a>
@@ -107,24 +107,36 @@
         <main class="content">
           <div class="container-fluid p-0">
             <h5 class="right-aligned" style="float: right">
-              <a href="index.html">Home</a> / Dashboard SK
+              <a href="../index.html">Home</a> / Form Upload SK Membimbing
             </h5>
-            <h1 class="h3 mb-3"><b>Form Upload SK</b></h1>
+            <h1 class="h3 mb-3"><b>Form Upload SK Membimbing</b></h1>
             <div class="row">
               <div class="col-12">
               <form id="uploadSK">
                   <div class="card">
                   <div class="card-body">
                       <!-- Inputan Upload SK -->
+                      <h5 class="card-title">Tahun Ajaran</h5>
                         <select
                           class="form-select"
-                          name="thnAjaran"
-                          id="thnAjaran"
+                          name="thnAjaranBimbing"
+                          id="thnAjaranBimbing"
                           required>
                           <option selected>- Pilih Tahun Ajaran -</option>
                           <option value="2324-1">2023-2024 Ganjil</option>
                           <option value="2324-2">2023-2024 Genap</option>
                         </select>
+                      <!-- Inputan Pilih Pelaksanaan Pendidikan -->
+                      <h5 class="card-title mt-4">Pelaksanaan Pendidikan</h5>
+                      <select
+                        class="form-select"
+                        name="pelaksanaDidik"
+                        id="pelaksanaDidik"
+                        required>
+                        <option selected>- Pilih Pelaksanaan Pendidikan -</option>
+                        <option value="ta">Membimbing Tugas Akhir</option>
+                        <option value="tesis">Membimbing Tesis</option>
+                      </select>
                   </div>
                   </div>
 
@@ -132,12 +144,12 @@
                   <!-- SK 1 -->
                   <div class="card-body" id="2324-1">
                       <!-- Inputan Upload SK -->
-                      <h5 class="card-title">Upload SK Tahun Ajaran 2023/2024 Ganjil</h5>
+                      <h5 class="card-title">Upload SK Membimbing</h5>
                       <input
                       type="file"
                       class="form-control"
-                      id="skUpload2324Ganjil"
-                      name="skUpload2324Ganjil"
+                      id="skUpload"
+                      name="skUpload"
                       value="" />
                       <!-- Button Submit -->
                       <div
@@ -149,33 +161,7 @@
                       <button
                           type="button"
                           class="btn btn-info"
-                          id="submitButton1">
-                          Uploud SK
-                      </button>
-                      </div>
-                  </div>
-
-                  <!-- SK 2 -->
-                  <div class="card-body" id="2324-2" hidden>
-                      <!-- Inputan Upload SK -->
-                      <h5 class="card-title">Upload SK Tahun Ajaran 2023/2024 Genap</h5>
-                      <input
-                      type="file"
-                      class="form-control"
-                      id="skUpload2324Genap"
-                      name="skUpload2324Genap"
-                      value="" />
-                      <!-- Button Submit -->
-                      <div
-                      style="
-                          position: relative;
-                          text-align: right;
-                          margin-top: 20px;
-                      ">
-                      <button
-                          type="button"
-                          class="btn btn-info"
-                          id="submitButton2">
+                          id="submitButton">
                           Uploud SK
                       </button>
                       </div>
@@ -210,9 +196,9 @@
 
     <!-- Library Javascript Terkait -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="static/js/index.js" type="module"></script>
-    <script src="static/js/style/style.js" defer></script>
-    <script src="static/js/app.js"></script>
+    <script src="../static/js/membimbing/membimbing.js" type="module"></script>
+    <script src="../static/js/style/style.js" defer></script>
+    <script src="../static/js/app.js"></script>
     <!-- <script src="static/js/croot.js" type="module"></script> -->
   </body>
 </html>
