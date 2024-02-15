@@ -15,7 +15,7 @@ submitButton.addEventListener('click', () => {
     const selectedPelaksanaDidik = pelaksanaDidik.value;
 
     // Update URL untuk pengiriman SK berdasarkan tahun ajaran dan pelaksanaan pendidikan yang dipilih
-    const postSKByFolder = UrlPostSKByFolder + `${selectedThnAjaran}/${selectedPelaksanaDidik}`;
+    const postSKByFolder = UrlPostSKByFolder + `${selectedThnAjaran}/pembinaan/${selectedPelaksanaDidik}`;
 
     // Tampilkan konfirmasi dan kirim file jika dikonfirmasi
     confirmUpload(postSKByFolder);
